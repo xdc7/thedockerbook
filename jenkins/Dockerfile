@@ -9,5 +9,5 @@ RUN wget http://get.docker.com/builds/Linux/x86_64/docker-latest.tgz
 RUN tar -xvzf docker-latest.tgz
 RUN cp -R docker/* /usr/bin/
 USER jenkins
-RUN sudo /usr/bin/dockerd
 RUN /usr/local/bin/install-plugins.sh junit git git-client ssh-slaves greenballs chucknorris ws-cleanup
+CMD sudo /usr/bin/dockerd
