@@ -10,4 +10,4 @@ RUN tar -xvzf docker-latest.tgz
 RUN cp -R docker/* /usr/bin/
 USER jenkins
 RUN /usr/local/bin/install-plugins.sh junit git git-client ssh-slaves greenballs chucknorris ws-cleanup
-CMD sudo nohup /usr/bin/dockerd &
+# Run exec -i -t jenkins /bin/bash and then run sudo /usr/bin/dockerd to start Docker
