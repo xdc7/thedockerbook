@@ -10,3 +10,4 @@ RUN mkdir -p /opt/webapp
 EXPOSE 4567
 
 CMD [ "/opt/webapp/bin/webapp" ]
+
